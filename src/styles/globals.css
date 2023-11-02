@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #e1e2e6;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(151, 151, 151, 0.47);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex !important;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(30, 61, 142, 0.06);
+  transition: all 0.2s ease;
+  z-index: 20 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+  color: #031e10;
+}
+
+.swiper-button-disabled {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.swiper-pagination {
+  display: none !important;
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(0, 122, 24, 0.6) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #031e10 !important;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 18px !important;
+    color: #031e10;
+  }
+}
+
+@media (max-width: 700px) {
+  .swiper-pagination {
+    display: block !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+.guesses-slider .swiper-button-prev,
+.guesses-slider .swiper-button-next {
+  display: flex;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: transparent;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(30, 61, 142, 0.06);
+  transition: all 0.2s ease;
+  z-index: 20 !important;
+  border: 2px solid #ffff00;
+}
+
+.guesses-slider .swiper-button-prev::after,
+.guesses-slider .swiper-button-next::after {
+  font-size: 20px !important;
+  color: #ffff00;
+}
+
+.guesses-slider .swiper-button-disabled {
+  opacity: 1 !important;
+  visibility: visible;
+  pointer-events: all !important;
+}
+
+.guesses-slider .swiper-pagination {
+  display: none;
+  bottom: 0 !important;
+}
+
+.guesses-slider .swiper-pagination-bullet {
+  background: #ebecf4 !important;
+}
+
+.guesses-slider .swiper-pagination-bullet-active {
+  background: #ffff00 !important;
+}
+
+@media (max-width: 1024px) {
+  .guesses-slider .swiper-button-prev,
+  .guesses-slider .swiper-button-next {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .guesses-slider .swiper-button-prev::after,
+  .guesses-slider .swiper-button-next::after {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 799px) {
+  .guesses-slider .swiper-pagination {
+    display: block;
+  }
+
+  .guesses-slider .swiper-button-prev,
+  .guesses-slider .swiper-button-next {
+    display: none;
+  }
+}

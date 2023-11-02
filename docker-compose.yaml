@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  betting:
+    image: 471281676991.dkr.ecr.us-east-1.amazonaws.com/lance-betting:${DD_VERSION}-${DD_ENV}
+    build: .
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - 3016:3000

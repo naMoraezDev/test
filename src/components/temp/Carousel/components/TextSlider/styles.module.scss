@@ -1,0 +1,51 @@
+.container {
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background-color: #ffff00;
+
+  @media (max-width: 430px) {
+    display: none;
+  }
+
+  .slideGroup {
+    display: flex;
+    flex-shrink: 0;
+
+    @keyframes slide {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    animation: slide 40s infinite linear;
+  }
+
+  .text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: normal;
+    font-family: Work Sans;
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .greenText {
+    color: #031e10;
+  }
+
+  .blueText {
+    color: #06379d;
+  }
+}

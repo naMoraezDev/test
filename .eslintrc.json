@@ -1,0 +1,51 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb-base"],
+  "rules": {
+    "indent": "off",
+    "no-undef": "off",
+    "camelcase": "off",
+    "no-plusplus": "off",
+    "arrow-parens": "off",
+    "import/order": "off",
+    "dot-notation": "off",
+    "linebreak-style": "off",
+    "no-return-assign": "off",
+    "arrow-body-style": "off",
+    "react/prop-types": "off",
+    "import/extensions": "off",
+    "consistent-return": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-confusing-arrow": "off",
+    "operator-linebreak": "off",
+    "no-unneeded-ternary": "off",
+    "operator-assignment": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "no-extra-boolean-cast": "off",
+    "array-callback-return": "off",
+    "function-paren-newline": "off",
+    "react/react-in-jsx-scope": "off",
+    "implicit-arrow-linebreak": "off",
+    "@next/next/no-img-element": "off",
+    "no-promise-executor-return": "off",
+    "no-unsafe-optional-chaining": "off",
+    "space-before-function-paren": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off",
+    "@next/next/next-script-for-ga": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", "ts", "tsx"] }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx"]
+      }
+    }
+  }
+}

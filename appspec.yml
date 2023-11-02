@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+
+files:
+  - source: ./
+    destination: /var/www/betting-dev.lancecorp.com.br
+
+hooks:
+  ApplicationStart:
+    - location: deploy/scripts/start.sh
+      runas: ubuntu

@@ -1,0 +1,125 @@
+.button {
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 32px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.default {
+  color: #ffffff;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #525252;
+
+  &:hover {
+    background-color: #464646;
+  }
+
+  &:active {
+    background-color: #5e5e5e;
+  }
+
+  &:disabled {
+    background-color: #afafaf;
+  }
+}
+
+.bet {
+  color: #ffff00;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #062790;
+
+  &:hover {
+    background-color: #001d86;
+  }
+
+  &:active {
+    background-color: #10319a;
+  }
+
+  &:disabled {
+    background-color: #4d5c8b;
+  }
+}
+
+.courses {
+  color: #181818;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #00c9c9;
+
+  &:hover {
+    background-color: #00b7b7;
+  }
+
+  &:active {
+    background-color: #0fd8d8;
+  }
+
+  &:disabled {
+    background-color: #94baba;
+  }
+}
+
+.lance {
+  color: #ffffff;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #007a18;
+
+  &:hover {
+    background-color: #006e0c;
+  }
+
+  &:active {
+    background-color: #0c8624;
+  }
+
+  &:disabled {
+    background-color: #568760;
+  }
+}
+
+.widget {
+  color: #181818;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #ffff00;
+
+  &:hover {
+    background-color: #e4e413;
+  }
+
+  &:active {
+    background-color: #ffff2c;
+  }
+
+  &:disabled {
+    background-color: #ffff85;
+  }
+}
+
+.play {
+  color: #ffffff;
+  transition: all;
+  transition-duration: 300ms;
+  background-color: #dd1e00;
+
+  &:hover {
+    background-color: #cf1000;
+  }
+
+  &:active {
+    background-color: #ec2d0f;
+  }
+
+  &:disabled {
+    background-color: #e36955;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  gap: 16px;
+  width: 100%;
+  bottom: 16px;
+  z-index: 999;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+
+  .bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #464646;
+
+    @media (max-width: 800px) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .active {
+    background-color: #8b8b8b !important;
+  }
+}

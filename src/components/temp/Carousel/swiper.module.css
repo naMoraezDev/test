@@ -1,0 +1,10 @@
+.mySwiper {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .mySwiper {
+    padding-bottom: 24px;
+  }
+}

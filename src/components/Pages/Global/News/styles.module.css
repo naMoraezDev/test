@@ -1,0 +1,14 @@
+.links a {
+  color: #031e10;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .links a {
+    color: #031e10;
+    text-decoration: underline;
+  }
+}
